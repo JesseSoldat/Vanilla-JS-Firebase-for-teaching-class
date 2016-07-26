@@ -15,7 +15,7 @@ var avatarInput = document.getElementById('avatar');
 var addressInput = document.getElementById('address');
 var cityInput = document.getElementById('city');
 var stateInput = document.getElementById('state');
-var zipInput = document.getElementById('zip');
+var zipInput = document.getElementById('zip'); 
 var countryInput = document.getElementById('country');
 var bioInput = document.getElementById('bio');
 
@@ -37,9 +37,9 @@ function addUser(e){
 	var address = addressInput.value;
 	var city = cityInput.value;
 	var state = stateInput.value;
-	var zip = zipInput;
-	var country = countryInput;
-	var bio = bioInput;
+	var zip = zipInput.value;
+	var country = countryInput.value;
+	var bio = bioInput.value;
     
 	console.log(userData);
 
