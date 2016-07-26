@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Profile</title>
+<script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCWfPHBoLxrwJewP95yJ0VdysfDLTiOK-k",
+    authDomain: "reactcontactbook.firebaseapp.com",
+    databaseURL: "https://reactcontactbook.firebaseio.com",
+    storageBucket: "reactcontactbook.appspot.com",
+  };
+  firebase.initializeApp(config);
+
+</script>
+</head>
+<body>
+<h3>Add Profile</h3>
+<form id="addProfile">
+	<input id="fName" type="text" name="" placeholder="First Name" required="">
+	<input id="lName" type="text" name="" placeholder="LastName" required="">
+	<input id="address" type="text" name="" placeholder="Address" required="">
+	<input id="city" type="text" name="" placeholder="City" required="">
+	<input id="state" type="text" name="" placeholder="State" required="">
+	<input id="zip" type="text" name="" placeholder="Zipcode" required="">
+	<input id="country" type="text" name="" placeholder="Country" required="">
+	<input id="avatar" type="text" name="" placeholder="Avatar URL" required="">
+	<textarea id="bio" required="">Bio</textarea>
+	<button>Submit</button>
+</form>
+<script src="add.js"></script>
+</body>
+</html>
