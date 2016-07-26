@@ -2,10 +2,40 @@
 <html>
 <head>
 	<title>JS Form</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+
+
+<script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCWfPHBoLxrwJewP95yJ0VdysfDLTiOK-k",
+    authDomain: "reactcontactbook.firebaseapp.com",
+    databaseURL: "https://reactcontactbook.firebaseio.com",
+    storageBucket: "reactcontactbook.appspot.com",
+  };
+  firebase.initializeApp(config);
+
+</script>
+    
 </head>
 <body>
+	<h3>Login</h3>
+	<form id="logForm">
+		<input type="email" name="" placeholder="email" id="logEmail">
+		<input type="text" name="" placeholder="password" id="logPass">
+		<button>Login</button>
+	</form>
+
+	<h3>Register</h3>
+	<form id="regForm">
+		<input type="email" name="" placeholder="email" id="regEmail">
+		<input type="text" name="" placeholder="password" id="regPass">
+		<button>Register</button>
+	</form>
 
 <script src="main.js"></script>
+
+
 </body>
 </html>
