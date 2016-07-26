@@ -21,7 +21,12 @@ var bioInput = document.getElementById('bio');
 
 var addProfile = document.getElementById('addProfile');
 
+var goToProfile = document.getElementById('goToProfile');
+
+
 addProfile.addEventListener('submit', addUser);
+
+goToProfile.addEventListener('click', routeToProfile);
 
 
 function addUser(e){
@@ -56,5 +61,12 @@ function addUser(e){
 	}
 	writeUserData();
 
+	goToProfile.style.display = 'inline-block';
+
+	addProfile.style.display = 'none';
 }
+
+	function routeToProfile(){
+		window.location.href = './profile.html';
+	}
 
