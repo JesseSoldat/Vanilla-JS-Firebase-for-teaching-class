@@ -29,6 +29,7 @@ addProfile.addEventListener('submit', addUser);
 goToProfile.addEventListener('click', routeToProfile);
 
 
+
 function addUser(e){
 	e.preventDefault();
 	var fName = fNameInput.value;
