@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Profile</title>
+
+	<script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+	<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCWfPHBoLxrwJewP95yJ0VdysfDLTiOK-k",
+    authDomain: "reactcontactbook.firebaseapp.com",
+    databaseURL: "https://reactcontactbook.firebaseio.com",
+    storageBucket: "reactcontactbook.appspot.com",
+  };
+  firebase.initializeApp(config);
+
+</script>
+</head>
+<body>
+<h3>Edit Profile</h3>
+<form>
+	<input type="text" id="fNameEdit" value="">
+	<input type="text" id="lNameEdit" value="">
+	<input type="text" id="emailEdit" value="">
+	<input type="text" id="addressEdit" value="">
+	<input type="text" id="cityEdit" value="">
+	<input type="text" id="stateEdit" value="">
+	<input type="text" id="countryEdit" value="">
+	<input type="text" id="bioEdit" value="">
+	<input type="text" id="avatarEdit" value="">
+
+
+	<button>Edit</button>
+
+</form>
+<script src="editProfile.js"></script>
+</body>
+</html>

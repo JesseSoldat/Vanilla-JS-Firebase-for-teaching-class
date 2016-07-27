@@ -5,9 +5,18 @@ var addressProfile = document.getElementById('addressProfile');
 var cityProfile = document.getElementById('cityProfile');
 var stateProfile = document.getElementById('stateProfile');
 var countryProfile = document.getElementById('stateProfile');
+var bioProfile = document.getElementById('bioProfile');
+var avatarProfile = document.getElementById('avatarProfile');
 
 
+//Edit
+var editProfileBtn =document.getElementById('editProfile');
 
+editProfileBtn.addEventListener('click', routeEditProfile);
+
+function routeEditProfile(){
+	window.location.href = './edit.html';
+}
 
 
 var uid;
@@ -23,6 +32,9 @@ firebase.auth().onAuthStateChanged(function(user) {
   	addressProfile.textContent = snapshot.val().address;
   	cityProfile.textContent = snapshot.val().city;
   	stateProfile.textContent = snapshot.val().state;
+  	bioProfile.textContent = snapshot.val().bio;
+  	avatarProfile.src = snapshot.val().avatar;
+
 
 
 	});

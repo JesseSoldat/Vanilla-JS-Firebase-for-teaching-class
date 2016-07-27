@@ -5,3 +5,7 @@ button	{
 #goToProfile {
 	display: none;
 }
+
+#avatarProfile {
+	width: 15%;
+}
